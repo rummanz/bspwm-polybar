@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Created By Aditya Shakya
+
+rofi -modi run,drun -show drun -location 7 -xoffset 2 -yoffset -495 -line-padding 12 -columns 1 -width 15 -lines 25 -padding 10 -hide-scrollbar -show-icons -drun-icon-theme -theme solarized -font "hack 10"

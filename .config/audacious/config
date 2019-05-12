@@ -1,0 +1,61 @@
+
+[alsa]
+mixer-element=Master
+
+[audacious]
+equalizer_active=TRUE
+equalizer_bands=0.96,-2.4,1.44,0.96,-2.4,-3.36,0,0,0.96,3.36
+generic_title_format=${?artist:${artist} - }${title}
+net_buffer_kb=512
+output_buffer_size=1500
+shuffle=TRUE
+
+[audgui]
+equalizer_win=814,394,288,288
+filebrowser_win=622,298,672,480
+filesel_path=/run/media/rumman/Music
+info_win=729,274,548,391
+preset_browser_win=568,245,780,585
+
+[gtkui]
+column_widths=10,275,175,10,175,175,10,100,36,10,275,275,275,10,275
+infoarea_show_vis=FALSE
+infoarea_visible=FALSE
+menu_visible=FALSE
+player_height=455
+player_width=836
+player_x=637
+player_y=313
+statusbar_visible=FALSE
+
+[gtkui-layout]
+item0_name=Blur Scope
+item0_pos=-1,0,0,284,188
+item1_name=OpenGL Spectrum Analyzer
+item1_pos=-1,0,0,284,188
+item2_name=Spectrum Analyzer
+item2_pos=-1,0,0,284,188
+item3_name=Album Art
+item3_pos=-1,0,0,284,188
+item4_name=Playlist Manager
+item4_pos=-1,0,0,284,188
+item5_name=LyricWiki Plugin
+item5_pos=-1,0,0,284,188
+item6_name=Search Tool
+item6_pos=0,-1,-1,202,403
+item_count=7
+
+[skins]
+equalizer_visible=TRUE
+equalizer_x=1463
+equalizer_y=705
+player_x=1439
+player_y=335
+playlist_visible=TRUE
+playlist_width=425
+playlist_x=1439
+playlist_y=449
+skin=/usr/share/audacious/Skins/Osmosis
+
+[skins-layout]
+search-tool=814,442,288,192
