@@ -1,3 +1,6 @@
 # bspwm-polybar
 
-This repository contains my personal desktop configuration. Screenshots, package list, dependency will be added soon.
+## dependency
+`bspwm dunst hsetroot polybar tewi-fonts-ttf rofi compton cava slop sxhkd xdo xrdb xsel xset xsetroot xsettingsd xtitle`
+
+
