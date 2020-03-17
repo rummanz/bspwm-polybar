@@ -1,6 +1,10 @@
 # bspwm-polybar
 
 ## dependency
-`bspwm dunst hsetroot polybar tewi-fonts-ttf rofi compton cava slop sxhkd xdo xrdb xsel xset xsetroot xsettingsd xtitle`
+`bspwm dunst hsetroot polybar rofi compton slop sxhkd xdo xsel xorg-xrdb xorg-xset xorg-xsetroot xsettingsd xtitle`
+
+Install `polybar` and `xtitle` from AUR.
+
+
 
 
