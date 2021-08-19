@@ -53,7 +53,7 @@ show_devices (){
 
         fi
     done
-    echo "${devices::-1}"
+    echo "${devices::1}"
 }
 
 show_menu () {
