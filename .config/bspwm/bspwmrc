@@ -33,7 +33,7 @@ fi
 bspc monitor -d '1' '2' '3' '4' '5' '6'
 bspc config focus_follows_pointer true
 bspc config border_width 2
-bspc config window_gap 4
+bspc config window_gap 8
 bspc config focused_border_color "$BLUE" 
 bspc config normal_border_color "$BLACK"
 bspc config active_border_color "$MAGENTA"
@@ -43,9 +43,9 @@ bspc config gapless_monocle true
 bspc config paddingless_monocle true
 bspc config single_monocle false
 bspc config top_padding 0
-bspc config right_padding 0
-bspc config bottom_padding 0
-bspc config left_padding 0
+bspc config right_padding 5
+bspc config bottom_padding 5
+bspc config left_padding 5
 
 ## Window rules
 # remove all rules first
@@ -119,12 +119,7 @@ dunst \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $SHORTWALLPAPER wallpaper"
-
-
-
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
-sonarr
 keconnect-indicator
 
 
