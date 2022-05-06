@@ -28,6 +28,9 @@ if [ -e ~/.cache/paintee ]; then
 	else
 	getcolors
 fi
+sed -i "s|.*ac.*|ac = ${BLUE}|g" ~/.config/polybar/colors.ini
+
+
 
 ## Bspwm configurations
 bspc monitor -d '1' '2' '3' '4' '5' '6'
@@ -53,7 +56,8 @@ bspc rule -r *:*
 #1 > terminal
 bspc rule -a URxvt desktop='^1' follow=on focus=on
 #2 > web
-bspc rule -a Chromium desktop='^2' follow=on focus=on
+bspc rule -a Google-chrome desktop='^2' follow=on focus=on
+bspc rule -a Firefox desktop='^2' follow=on focus=on
 bspc rule -a Transmission-gtk desktop='^2' follow=on focus=on
 #3 > file
 bspc rule -a Thunar desktop='^3' follow=on focus=on
@@ -70,10 +74,13 @@ bspc rule -a File-roller desktop='^3' follow=on focus=on
 
 #5 > media
 #declare -a media=(Audacity mpv Gimp Gimp-2.8)
-bspc rule -a Gedit desktop='^4' follow=on focus=on
+bspc rule -a Code desktop='^4' follow=on focus=on
+bspc rule -a DesktopEditors desktop='^4' follow=on focus=on
+bspc rule -a kdenlive desktop='^5' follow=on focus=on
 bspc rule -a Audacious desktop='^5' follow=on focus=on
 bspc rule -a vlc desktop='^5' follow=on focus=on
-bspc rule -a Gimp desktop='^5' follow=on focus=on
+bspc rule -a mpv desktop='^5' follow=on focus=on
+bspc rule -a Gimp-2.10 desktop='^5' follow=on focus=on
 bspc rule -a Spotify desktop='^5' follow=on focus=on
 #bspc rule -a Chromium desktop='^2' follow=on focus=on
 #for i in ${media[@]}; do
@@ -100,12 +107,11 @@ bspc rule -a Viewnior state=floating follow=on focus=on
 xsetroot -cursor_name left_ptr
 xbacklight -set 10
 xset fp+ ~/.fonts/misc
-killall -9 sxhkd vanela xsettingsd dunst
+killall -9 sxhkd dunst
 sxhkd &
-
-#vanela &
-
+picom &
 launch.sh
+
 
 xsettingsd &
 WALLPAPER=$(shuf -n1 -e ~/.wallpaper/*)
@@ -119,8 +125,10 @@ dunst \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $SHORTWALLPAPER wallpaper"
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-keconnect-indicator
+/usr/libexec/polkit-gnome-authentication-agent-1
+#/usr/libexec/xfce-polkit
+
+
 
 
 
