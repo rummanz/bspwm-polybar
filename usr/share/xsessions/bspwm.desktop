@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=bspwm
+Comment=Binary space partitioning window manager
+Exec=dbus-launch --exit-with-session bspwm
+Type=Application

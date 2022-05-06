@@ -16,6 +16,14 @@ then
 	eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
+#  ## test for an existing bus daemon, just to be safe
+#  if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+#      ## if not found, launch a new one
+#      eval `dbus-launch --sh-syntax`
+#      echo "D-Bus per-session daemon address is: $DBUS_SESSION_BUS_ADDRESS"
+#  fi
+
+
 # Export locale variables
 # I use autox for Display Manager replacement
 # It has a bug that make locale configurations are not loaded on login
@@ -38,10 +46,13 @@ export LC_TIME=en_US.utf8
 
 # Launch Bspwm
 # I put every autostart in bspwmrc
-exec bspwm
+#exec dbus-run-session bspwm
 
 
-xset +fp /usr/share/fonts/TTF
+
+
+
+
 
 
 

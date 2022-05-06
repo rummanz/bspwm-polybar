@@ -1,3 +1,15 @@
+# lockscreen
+alt + shift + x
+    betterlockscreen -l blur
+
+#Launch Rofi
+alt + Tab
+	rofi -show windowcd -show-icons
+#Powermenu
+super + shift + e
+	rofi -modi 'Powermenu:~/.config/rofi/powermenu.sh' -theme ~/.config/rofi/powermenu.rasi -show Powermenu -icon-theme "Papirus"
+
+
 ## Launch terminal
 super + Return
 	urxvt

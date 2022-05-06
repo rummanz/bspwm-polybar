@@ -1,0 +1,16 @@
+
+configuration {
+	modi: "run,window,windowcd,drun";
+  combi-modi: "window,windowcd,run";
+	font: "Helvetica Regular 12";
+  width: 600px;
+      border-color: #2e343f;
+   show-icons: true;
+  icon-theme: "Papirus";
+    display-drun: "";
+  drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+ 
+}
+
+
+@theme "slate"

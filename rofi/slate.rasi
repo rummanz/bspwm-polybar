@@ -1,0 +1,69 @@
+* {
+  background-color: @bg;
+  border-color: #2e343f;
+  text-color: #8ca0aa;
+  spacing: 0;
+    margin:     0;
+    padding:    0;
+  width: 650px;
+  font: "JetBrains Mono 12";
+  vertical-align: 0.5;
+}
+
+inputbar {
+  border: 0 0 1px 0;
+  children: [entry];
+  background-color:@win-bg;
+}
+
+prompt {
+  padding: 16px;
+  border: 0 1px 0 0;
+
+}
+
+textbox {
+
+  border: 0 0 1px 0;
+  border-color: #282C33;
+  padding: 8px 16px;
+}
+
+entry {
+  padding: 16px;
+}
+
+listview {
+  cycle: false;
+  margin: 0 0 -1px 0;
+  scrollbar: true;
+    lines:      8;
+}
+
+element {
+  border: 0 0 1px 0;
+  padding: 0px;     
+  children: [element-icon, element-text];
+}
+
+element selected.active {
+   background-color: @bg;
+   text-color: @selected-fg;
+}
+
+element selected.normal {
+    background-color: @selected-bg;
+  
+}
+
+element-icon { 
+  size: 3ch ;
+  padding: 8px;
+ }
+
+element selected {
+  background-color: @bg;
+}
+
+
+@import "colors.rasi"

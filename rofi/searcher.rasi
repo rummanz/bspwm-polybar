@@ -1,0 +1,152 @@
+configuration {
+    modi: "drun";
+    show-icons: true;
+    font: "Iosevka 14";
+    icon-theme: "Papirus";
+    display-drun: "";
+	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+}
+
+@import "colors.rasi"
+
+* {
+
+}
+
+#window {
+    transparency: "real";
+    fullscreen: true;
+    background-color: @win-bg;
+}
+
+#mainbox {
+    border:  0;
+    padding: 0;
+    padding : 5% 2.5% 2.5% 2.5%;
+    children: [inputbar, listview];
+    background-color: transparent;
+    spacing: 2%;
+}
+
+inputbar {
+    border-radius: 50%;
+    background-color: @bg;
+    children: [prompt, entry];
+    margin: 5px 10% 5px 10%;
+}
+
+entry {
+    background-color: @selected-bg;
+    padding: 5px;
+    placeholder: "Search...";
+    placeholder-color: @fg;
+    text-color: @fg;
+}
+
+prompt {
+    padding: 5px;
+    background-color: @selected-bg;
+    text-color: @fg;
+}
+
+#listview {
+    orientation: horizontal;
+    columns: 3;
+    lines: 10;
+    layout: vertical;
+    background-color: transparent;
+}
+
+element {
+    padding: 1%;
+    border-radius: 5px;
+    width: 2%;
+    margin: 0.55%;
+}
+
+element-icon {
+    size: 32px;
+    margin: 2px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: transparent;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+
+/* --NORMAL-- */
+
+element normal.normal {
+    background-color: rgba(0, 0, 0, 0);
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @selected-bg;
+    text-color:       @selected-fg;
+    border-color: #d07ef2;
+}
+
+element alternate.normal {
+    background-color: rgba(0,0,0,0);
+    text-color:       @fg;
+}
+
+
+/* --ACTIVE-- */
+
+element normal.active {
+    background-color: @highlight-bg;
+}
+
+element selected.active {
+   background-color: @selected-bg;
+   text-color: @selected-fg;
+}
+
+element alternate.active {
+    background-color: rgba(0,0,0,0);
+    text-color:       @fg;
+}
+
+
+/* --URGENT-- */
+
+element normal.urgent {
+    background-color: @urgent;
+    text-color:       @fg;
+}
+
+element selected.urgent {
+   background-color: @urgent;
+    text-color:       @selected-bg;
+}
+
+element alternate.urgent {
+    background-color: @urgent;
+    text-color:       @selected-bg;
+}
+
+
+
+
+mode-switcher {
+    border:       0px 0px 0px ;
+    border-color: @separatorcolor;
+}
+
+button {
+    spacing:    0;
+    text-color: @fg;
+}
+
+button.selected {
+    background-color: @selected-bg;
+    text-color:       @selected-fg;
+}
