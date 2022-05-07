@@ -29,6 +29,7 @@ if [ -e ~/.cache/paintee ]; then
 	getcolors
 fi
 sed -i "s|.*ac.*|ac = ${BLUE}|g" ~/.config/polybar/colors.ini
+sed -i '0,/.*accent-color:.*/{s//accent-color: '${BLUE}';/}' ~/.config/rofi/nord.rasi 
 
 
 
@@ -109,10 +110,7 @@ xbacklight -set 10
 xset fp+ ~/.fonts/misc
 killall -9 sxhkd dunst
 sxhkd &
-picom &
 launch.sh
-
-
 xsettingsd &
 WALLPAPER=$(shuf -n1 -e ~/.wallpaper/*)
 SHORTWALLPAPER=$(echo $WALLPAPER | sed "s@.*/@@" | sed "s/\..*$//")
@@ -125,7 +123,8 @@ dunst \
 -cb "$BACKGROUND" -cf "$FOREGROUND" -cfr "$RED" &
 sleep 0.5
 notify-send "Bspwm Loaded" "With $SHORTCOLOR color and $SHORTWALLPAPER wallpaper"
-/usr/libexec/polkit-gnome-authentication-agent-1
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+#/usr/libexec/polkit-gnome-authentication-agent-1
 #/usr/libexec/xfce-polkit
 
 
