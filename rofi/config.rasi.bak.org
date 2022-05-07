@@ -1,9 +1,0 @@
-configuration {
- sidebar-mode: true;
- modi: "drun,run,window";
- show-icons: true;
-
-
- }
-@theme "slate"
-

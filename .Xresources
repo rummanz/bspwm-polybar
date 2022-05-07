@@ -2,14 +2,19 @@
 ! Fonts
 ! ------------------------------------------------------------------------------
 
-URxvt.font:				-lucy-tewi-medium-r-normal-*-11-90-100-100-c-60-iso10646-1, \
-						-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
-URxvt.boldFont:			-lucy-tewi-bold-r-normal-*-11-80-100-100-c-60-iso10646-1, \
-						-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
-URxvt.italicFont:		-lucy-tewi-medium-r-normal-*-11-90-100-100-c-60-iso10646-1, \
-						-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
-URxvt.boldItalicFont:	-lucy-tewi-bold-r-normal-*-11-80-100-100-c-60-iso10646-1, \
-						-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
+#URxvt.font: xft:Hack:pixelsize=14
+#*antialias:  true
+#*autohint:   true
+
+
+URxvt.font: -lucy-tewi-medium-r-normal-*-11-90-100-100-c-60-iso10646-1, \
+	    -wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
+URxvt.boldFont:	-lucy-tewi-bold-r-normal-*-11-80-100-100-c-60-iso10646-1, \
+		-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
+URxvt.italicFont: -lucy-tewi-medium-r-normal-*-11-90-100-100-c-60-iso10646-1, \
+		-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
+URxvt.boldItalicFont: -lucy-tewi-bold-r-normal-*-11-80-100-100-c-60-iso10646-1, \
+		-wuncon-siji-medium-r-normal-*-10-100-75-75-c-80-iso10646-1
 
 ! ------------------------------------------------------------------------------
 ! URxvt configs

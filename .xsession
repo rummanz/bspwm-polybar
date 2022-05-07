@@ -1,5 +1,5 @@
 #!/bin/sh
 
 
-/bin/bash --login -i ~/.xinitrc
+#/bin/bash --login -i ~/.xinitrc
 

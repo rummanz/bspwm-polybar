@@ -1,9 +1,3 @@
-/*******************************************************************************
- * ROFI SQUARED THEME USING THE NORD PALETTE 
- * User                 : LR-Tech               
- * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
- *******************************************************************************/
-
 * {
     font:   "Helvetica Neue Regular 11";
 
@@ -11,7 +5,7 @@
     bg1:     #3B4252;
     fg0:     #D8DEE9;
 
-    accent-color:     #88C0D0;
+accent-color: #80cbc4;
     urgent-color:     #EBCB8B;
 
     background-color:   transparent;

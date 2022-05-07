@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 if [ -z "$@" ]; then
     echo -en "Shutdown\0icon\x1fsystem-shutdown\n"
     echo -en "Logout\0icon\x1fsystem-log-out\n"

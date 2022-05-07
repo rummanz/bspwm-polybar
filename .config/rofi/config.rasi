@@ -7,10 +7,10 @@ configuration {
       border-color: #2e343f;
    show-icons: true;
   icon-theme: "Papirus";
-    display-drun: "";
+    display-drun: "";
   drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
  
 }
 
 
-@theme "slate"
+@theme "nord"

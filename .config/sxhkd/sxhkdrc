@@ -20,7 +20,7 @@ super + shift + Return
 
 ## Launch Rofi start menu
 super + d
-	rofia
+	rofi -modi run,drun -show drun
 
 ## Launch common apps
 super + shift + {f,w,g}
